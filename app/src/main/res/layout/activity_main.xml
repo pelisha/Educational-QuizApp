@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp"
+    android:background="@drawable/images"
+    tools:context=".MainActivity"
+    tools:ignore="ExtraText">
+    <TextView
+        android:id="@+id/instruction"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:layout_marginTop="16dp"
+        android:text="Pick only the right answer as appropriate;"
+        android:textSize="18sp"
+        android:textColor="@color/colorPrimaryDark"
+       />
+    <TextView
+        android:id="@+id/question_one"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/instruction"
+        android:text="The unit for Power is"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="16sp"/>
+    <CheckBox
+        android:id="@+id/question_one_A"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Coulombs"
+        android:onClick="onCheckboxClicked"
+        android:layout_below="@id/question_one"
+        />
+    <CheckBox
+        android:id="@+id/question_one_B"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="watts"
+        android:onClick="onCheckboxClicked"
+        android:layout_below="@id/question_one_A"
+        />
+    <CheckBox
+        android:id="@+id/question_one_C"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Amperes"
+        android:onClick="onCheckboxClicked"
+        android:layout_below="@id/question_one_B"
+        />
+    <CheckBox
+        android:id="@+id/question_one_D"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="kilowatts"
+        android:onClick="onCheckboxClicked"
+        android:layout_below="@id/question_one_C"/>
+
+
+
+    <TextView
+        android:id="@+id/question_two"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="P.E is an acronym meaning?"
+        android:layout_below="@id/question_one_D"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="16sp"/>
+
+    <RadioButton android:id="@+id/question_two_A"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Potential energy"
+        android:layout_below="@id/question_two"
+        android:onClick="onRadioButtonClicked"/>
+
+    <RadioButton android:id="@+id/question_two_B"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Primary Element"
+        android:layout_below="@id/question_two_A"
+        android:onClick="onRadioButtonClicked"/>
+
+    <RadioButton android:id="@+id/question_two_C"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Primary Energy"
+        android:layout_below="@id/question_two_B"
+        android:onClick="onRadioButtonClicked"/>
+        />
+
+
+    <TextView
+        android:id="@+id/question_three"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Vector Quantity has  "
+        android:layout_below="@id/question_two_C"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="16sp"/>
+    <CheckBox
+        android:id="@+id/question_three_A"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="direction only"
+        android:onClick="onCheckboxClicked"
+        android:layout_below="@id/question_three"
+        />
+    <CheckBox
+        android:id="@+id/question_three_B"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="magnitude only"
+        android:onClick="onCheckboxClicked"
+        android:layout_below="@id/question_three_A"
+        />
+    <CheckBox
+        android:id="@+id/question_three_C"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="both magnitude and direction"
+        android:onClick="onCheckboxClicked"
+        android:layout_below="@id/question_three_B"
+        />
+    <CheckBox
+        android:id="@+id/question_three_D"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="no magnitude and direction"
+        android:onClick="onCheckboxClicked"
+        android:layout_below="@id/question_three_C"/>
+
+
+    <TextView
+        android:id="@+id/question_four"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Two resistors, 3 ohms and 5 ohms are connected in series. What is the total resistance in the circuit?      android:layout_below="@id/question_one_D"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="16sp"/>
+
+    <RadioButton android:id="@+id/question_four_A"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="15 ohms"
+        android:layout_below="@id/question_four"
+        android:onClick="onRadioButtonClicked"/>
+
+    <RadioButton android:id="@+id/question_four_B"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="8 ohms"
+        android:layout_below="@id/question_four_A"
+        android:onClick="onRadioButtonClicked"/>
+
+    <RadioButton android:id="@+id/question_four_C"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="4 ohms"
+        android:layout_below="@id/question_four_B"
+        android:onClick="onRadioButtonClicked"/>
+    />
+
+    <TextView
+        android:id="@+id/done"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Done"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@id/question_four_C"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Submit"
+        android:onClick="sendMessage"
+        android:layout_below="@id/done"
+              />
+
+
+</RelativeLayout>
